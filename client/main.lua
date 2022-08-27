@@ -14,19 +14,19 @@ local jobPed = nil
 local jobBlip = nil
 
 local function CallAnimation()
-	Citizen.CreateThread(function()
-		RequestAnimDict("random@arrests")
-		TaskPlayAnim(PlayerPedId(), "random@arrests", "generic_radio_enter", 1.5, 2.0, -1, 50, 2.0, 0, 0, 0 )
-		Citizen.Wait(6000)
-		ClearPedTasks(PlayerPedId())
-	end)
+    Citizen.CreateThread(function()
+	RequestAnimDict("random@arrests")
+	TaskPlayAnim(PlayerPedId(), "random@arrests", "generic_radio_enter", 1.5, 2.0, -1, 50, 2.0, 0, 0, 0 )
+	Citizen.Wait(6000)
+	ClearPedTasks(PlayerPedId())
+    end)
 end
 
 local function PlayJobAnimation()
-	SetVehicleUndriveable(playerVeh, true)
-	SetVehicleDoorOpen(playerVeh, 4, false, false)
-	TaskTurnPedToFaceCoord(jobPed, GetEntityCoords(playerVeh), -1)
-	TaskStartScenarioInPlace(jobPed, Config.Ped[job].animation, 0, false)
+    SetVehicleUndriveable(playerVeh, true)
+    SetVehicleDoorOpen(playerVeh, 4, false, false)
+    TaskTurnPedToFaceCoord(jobPed, GetEntityCoords(playerVeh), -1)
+    TaskStartScenarioInPlace(jobPed, Config.Ped[job].animation, 0, false)
 end
 
 local function DoVehicleDamage(vehicle, body, engine)
