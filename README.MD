@@ -12,6 +12,7 @@
 ## Optional
 - [qb-radialmenu](https://github.com/qbcore-framework/qb-radialmenu)
 
+![foto1](https://naskho.org/images/ReadPlease.gif)
 
 ## How to install
 - Copy the `table` from `mh-aiems.sql` to your database
