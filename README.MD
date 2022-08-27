@@ -20,7 +20,7 @@
 
 
 ## User Commands
-- `/callai mechanix`
+- `/callai mechanic`
 - `/callai towtruck`
 - `/callai ambulance` 
 
