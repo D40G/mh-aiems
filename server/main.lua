@@ -46,7 +46,7 @@ QBCore.Commands.Add('callai', Lang:t('command.callinfo'), {{id='name', help='amb
 	if job == 'ambulance' or job == 'mechanic' or job == 'towtruck' then
 	    local online = QBCore.Functions.GetDutyCount(job)
 	    if online >= 1 then
-		TriggerClientEvent('QBCore:Notify', id, Lang:t('notify.to_much_ems_online'), "error", 10000)
+		TriggerClientEvent('QBCore:Notify', src, Lang:t('notify.to_much_ems_online'), "error", 10000)
 	    else
 		TriggerClientEvent('mh-aiems:client:call'..job..'', src)
 	    end
