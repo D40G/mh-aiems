@@ -16,6 +16,7 @@ local Translations = {
         ['stored_by_mechanic'] = "Your Vehicle is stored by the mechanic",
         ['area_is_obstructed'] = "This area is obstructed",
         ['is_in_vehicle'] = "You are already in a vehicle",
+        ['off_duty'] = "You are not on duty",
     },
     
     menu = {
