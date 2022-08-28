@@ -47,8 +47,8 @@
 - so have enough mechanics on your server, or the players will not get their vehicle back.
 - only mechanics can fix this vehicle, with the F1 job menu.
 - so if your vehicle does not get fix. you have to wait untill a mechanic fix your vehicle with the F1 job menu.
-- cause in real live your vehicle also is stored by the mechanic is you let it tow,
-- this script does the same thing.
+- cause in real live your vehicle also is stored by the mechanic if you let it tow,
+- and this script does the same thing.
  
 
 
