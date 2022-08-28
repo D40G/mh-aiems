@@ -178,7 +178,7 @@ local function CheckIfICanPayTheBill()
 	    else
 		QBCore.Functions.Notify(Lang:t('notify.off_duty'), "error")
 	    end
-	else
+	elseif PlayerData.job.name ~= "mechanic" then
 	    if job == "mechanic" or job == "towtruck" then
 		QBCore.Functions.TriggerCallback('mh-aiems:server:isVehicleOwner', function(owned)
 		    if owned then
@@ -192,7 +192,7 @@ local function CheckIfICanPayTheBill()
 			QBCore.Functions.Notify(Lang:t('notify.not_the_owner'), "error")
 		     end
                 end, QBCore.Functions.GetPlate(playerVeh))
-	    else
+	    elseif job == "ambulance" then
 		CallAnimation()
 		Wait(6000)
 		QBCore.Functions.TriggerCallback('mh-aiems:server:CanIPayTheBill', function(canipay)
