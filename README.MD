@@ -16,7 +16,8 @@
 ![foto1](https://naskho.org/images/ReadPlease.gif)
 
 ## NOTE!!
-- if you lost a vehicle, chech your player_vehicles table in your database and lookif this vehicle is not in state 4,
+- if you lost a vehicle, chech your `player_vehicles` table in your `database` and look if this `vehicle plate` is not in state `4`, 
+- it must be `1` to get it back again and restart `qb-garages`
 - and if this vehicle is stored inside `broken_player_vehicles` then also remove it there.
 
 ## How to install
