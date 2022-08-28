@@ -1,7 +1,7 @@
 ## MH AI EMS Services
 - When there are no ems players online to help your players.
 - this also works for the mechanic job, they have a work menu in F1 to spawn the broken vehicles,
-- this is only possible if a towtruck has take your vehicle to the mechanic. 
+- this only is possible if a towtruck has take your vehicle to the mechanic. 
 
 
 ## Dependencies
@@ -12,7 +12,6 @@
 ## Optional
 - [qb-radialmenu](https://github.com/qbcore-framework/qb-radialmenu)
 
-![foto1](https://naskho.org/images/ReadPlease.gif)
 
 ## How to install
 - Copy the `table` from `mh-aiems.sql` to your database
@@ -21,7 +20,7 @@
 
 
 ## User Commands
-- `/callai mechanic`
+- `/callai mechanix`
 - `/callai towtruck`
 - `/callai ambulance` 
 
@@ -37,7 +36,15 @@
 - so the mechanic job can spawn this vehicle and fix it for you, if this player is online,
 - only the mechanic job can recover the vehicle from the database,
 - so have enough mechanics on your server, or the players will not get their vehicle back.
+- only mechanics can fix this vehicle, with the F1 job menu.
+- so if your vehicle does not get fix. you have to wait untill a mechanic fix your vehicle with the F1 job menu.
+- cause in real live your vehicle also is stored by the mechanic is you let it tow,
+- this script does the same thing.
+ 
 
+## The payment
+- the payment only happens when the job is done, this because if the job doesnot spawn in you lose money,
+- so i build it like this so you never lose monay again when the ped and his vehicle does not spawn in.
 
 ## Add in `qb-radialmenu/config.lua` around line 296
 - change the `3` if you have more items.
@@ -81,6 +88,14 @@
     icon = 'car',
     type = 'client',
     event = 'mh-aiems:client:getBrokenVehicles',
+    shouldClose = true
+},
+{
+    id = 'fixbrokenvehicles',
+    title = 'Fix Vehicles',
+    icon = 'car',
+    type = 'client',
+    event = 'mh-aiems:client:FixVehicle',
     shouldClose = true
 },
 ```
