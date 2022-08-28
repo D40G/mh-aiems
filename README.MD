@@ -17,8 +17,8 @@
 
 ## NOTE!!
 - if you lost a vehicle, chech your `player_vehicles` table in your `database` and look if this `vehicle plate` is not in state `4`, 
-- it must be `1` to get it back again and restart `qb-garages`
-- and if this vehicle is stored inside `broken_player_vehicles` then also remove it there.
+- it must be state `1` to get it back again and if you did that then restart `qb-garages` script
+- If this vehicle is stored inside `broken_player_vehicles` then also remove it there.
 
 ## How to install
 - Copy the `table` from `mh-aiems.sql` to your database
