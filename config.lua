@@ -4,7 +4,7 @@
 Config = {}
 
 Config.MinDamageToUseTowTruck = 150 
-Config.KeyScriptTrigger = "qb-vehiclekeys:server:AcquireVehicleKeys" -- server trigger event
+Config.KeyScriptTrigger = "qb-vehiclekeys:server:AcquireVehicleKeys"
 
 Config.Ped = {
 
