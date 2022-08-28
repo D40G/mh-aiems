@@ -1,5 +1,5 @@
 --[[ ===================================================== ]]--
---[[            QBCore AI EMS Script by MaDHouSe           ]]--
+--[[        QBCore 3 in 1 AI EMS Script by MaDHouSe        ]]--
 --[[ ===================================================== ]]--
 
 local QBCore = exports['qb-core']:GetCoreObject()
