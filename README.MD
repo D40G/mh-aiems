@@ -15,6 +15,9 @@
 
 ![foto1](https://naskho.org/images/ReadPlease.gif)
 
+## NOTE!!
+- if you lost a vehicle, chech your player_vehicles table in your database and lookif this vehicle is not in state 4,
+- and if this vehicle is stored inside `broken_player_vehicles` then also remove it there.
 
 ## How to install
 - Copy the `table` from `mh-aiems.sql` to your database
