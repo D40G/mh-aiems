@@ -16,6 +16,7 @@ local Translations = {
         ['stored_by_mechanic'] = "Uw Voertuig wordt gestald door de monteur",
         ['area_is_obstructed'] = "Het gebied word belemmerd",
         ['is_in_vehicle'] = "Je zit al in een voertuig",
+        ['off_duty'] = "Je bent niet in dienst",
     },
     
     menu = {
