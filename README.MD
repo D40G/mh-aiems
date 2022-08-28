@@ -53,8 +53,8 @@
 
 
 ## The payment
-- the payment only happens when the job is done, this because if the job doesnot spawn in you lose money,
-- so i build it like this so you never lose monay again when the ped and his vehicle does not spawn in.
+- the payment only happens when the job is done, this because if the job vehicle or ped does not spawn in, you will lose money,
+- so i build it like this, so you never lose monay when the ped and his vehicle does not spawn in.
 
 
 
