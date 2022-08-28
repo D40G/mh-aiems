@@ -1,4 +1,4 @@
-## MH AI EMS Services
+## MH 3 in 1 AI EMS Services
 - When there are no ems players online to help your players.
 - this also works for the mechanic job, they have a work menu in F1 to spawn the broken vehicles,
 - this only is possible if a towtruck has take your vehicle to the mechanic. 
