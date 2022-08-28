@@ -101,7 +101,7 @@
 },
 {
     id = 'fixbrokenvehicles',
-    title = 'Fix Vehicles',
+    title = 'Fix Vehicle',
     icon = 'car',
     type = 'client',
     event = 'mh-aiems:client:FixVehicle',
