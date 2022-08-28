@@ -13,6 +13,9 @@
 - [qb-radialmenu](https://github.com/qbcore-framework/qb-radialmenu)
 
 
+![foto1](https://naskho.org/images/ReadPlease.gif)
+
+
 ## How to install
 - Copy the `table` from `mh-aiems.sql` to your database
 - Copy the folder `mh-aiems` to `resources/[qb]/`
@@ -25,10 +28,12 @@
 - `/callai ambulance` 
 
 
+
 ## How it works
 - The ambulance only works if you are dead or in last-stand.
 - The mechanic only works if your vehicle engine damage is above 150 health (it's still possible to drive)
 - The towtruck only works if yout vehicle engine damage is below 150 health (it's not possible to drive)
+
 
 
 ## What does the towtruck and recover works?
@@ -42,9 +47,11 @@
 - this script does the same thing.
  
 
+
 ## The payment
 - the payment only happens when the job is done, this because if the job doesnot spawn in you lose money,
 - so i build it like this so you never lose monay again when the ped and his vehicle does not spawn in.
+
 
 
 ## Add in `qb-radialmenu/config.lua` around line 296
@@ -81,6 +88,7 @@
     }
 ```
 
+
 ## Add for Mechanic job in `qb-radialmenu/config.lua` around line 586
 ```lua
 {
@@ -100,6 +108,7 @@
     shouldClose = true
 },
 ```
+
 
 ## Database Table
 ```sql
