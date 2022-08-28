@@ -14,6 +14,7 @@ Config.Ped = {
         vehicle      = "ambulance",
         pedModel     = "S_M_M_DOCTOR_01",
         animation    = "cpr_pumpchest",
+        bone         = "bodyshell",
         drivingStyle = 524863, -- you can change the drivestyle for the ped here: https://vespura.com/fivem/drivingstyle/
         walkingStyle = 786603,
         spawnRadius  = 100,    -- don't go higher than 200
