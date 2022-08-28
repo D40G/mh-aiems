@@ -46,6 +46,7 @@
 - the payment only happens when the job is done, this because if the job doesnot spawn in you lose money,
 - so i build it like this so you never lose monay again when the ped and his vehicle does not spawn in.
 
+
 ## Add in `qb-radialmenu/config.lua` around line 296
 - change the `3` if you have more items.
 ```lua
@@ -98,4 +99,17 @@
     event = 'mh-aiems:client:FixVehicle',
     shouldClose = true
 },
+```
+
+## Database Table
+```sql
+CREATE TABLE IF NOT EXISTS `broken_player_vehicles` (
+  `id` int(10) NOT NULL AUTO_INCREMENT,
+  `citizenid` varchar(255) COLLATE utf8mb4_unicode_ci NOT NULL,
+  `plate` varchar(255) COLLATE utf8mb4_unicode_ci NOT NULL,
+  `vehicle` varchar(255) COLLATE utf8mb4_unicode_ci NOT NULL,
+  `hash` varchar(255) COLLATE utf8mb4_unicode_ci NOT NULL,
+  `mods` longtext COLLATE utf8mb4_unicode_ci DEFAULT NULL,
+  PRIMARY KEY (`id`) USING BTREE
+) ENGINE=InnoDB AUTO_INCREMENT=6 DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_unicode_ci ROW_FORMAT=DYNAMIC;
 ```
