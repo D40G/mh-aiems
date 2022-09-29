@@ -67,13 +67,6 @@
         icon = 'bell',
         items = {
             {
-                id = 'callambulance',
-                title = 'Call Ambulance',
-                icon = 'bell',
-                type = 'client',
-                event = 'mh-aiems:client:callambulance',
-                shouldClose = true
-            }, {
                 id = 'callmechanic',
                 title = 'Call Mechanic',
                 icon = 'bell',
@@ -90,6 +83,22 @@
             },
         }
     }
+```
+
+## Add this trigger inside `ambulance/client/dead.lua` at around line 193 
+```lua
+TriggerEvent('mh-aiems:client:callambulance')
+```
+
+## Trigger Example 
+```lua
+DrawTxt(0.845, 1.44, 1.0, 1.0, 0.6, Lang:t('info.bleed_out_help', {time = math.ceil(LaststandTime)}), 255, 255, 255, 255)
+if not emsNotified then
+    DrawTxt(0.91, 1.40, 1.0, 1.0, 0.6, Lang:t('info.request_help'), 255, 255, 255, 255)
+    TriggerEvent('mh-aiems:client:callambulance') -- <<--- add ith here
+else
+    DrawTxt(0.90, 1.40, 1.0, 1.0, 0.6, Lang:t('info.help_requested'), 255, 255, 255, 255)
+end
 ```
 
 
