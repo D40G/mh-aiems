@@ -29,7 +29,6 @@
 ## User Commands
 - `/callai mechanix`
 - `/callai towtruck`
-- `/callai ambulance` 
 
 
 
