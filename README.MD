@@ -85,6 +85,8 @@
 ```
 
 ## Add this trigger inside `ambulance/client/dead.lua` at around line 193 
+- this is when you are dead or laststand you can press G, and when you press it and there is no ems online
+- then the ai ambulance will come.
 ```lua
 TriggerEvent('mh-aiems:client:callambulance')
 ```
