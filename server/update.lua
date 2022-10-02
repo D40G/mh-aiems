@@ -1,5 +1,5 @@
 local user = "MaDHouSe79"
-local script = "mh-mygaragemenu"
+local script = "mh-aiems"
 
 local resourceName = mil
 
